@@ -1,0 +1,17 @@
+{
+    "name": "xvilo/crt-sh-api",
+    "description": "crt.sh client, search through Certificate Transparency logs",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Xvilo\\CrtShApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sem Schilder",
+            "email": "sem@tropical.email"
+        }
+    ],
+    "require": {}
+}
