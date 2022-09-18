@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Xvilo\CrtShApi\Model;
 
+use DateTimeInterface;
+
 final class SearchResult
 {
     public function __construct(
@@ -12,9 +14,9 @@ final class SearchResult
         readonly private string $issuerName,
         readonly private string $commonName,
         readonly private string $name,
-        readonly private \DateTimeInterface $createdAt,
-        readonly private \DateTimeInterface $notBefore,
-        readonly private \DateTimeInterface $notAfter,
+        readonly private DateTimeInterface $createdAt,
+        readonly private DateTimeInterface $notBefore,
+        readonly private DateTimeInterface $notAfter,
         readonly private string $serialNumber
     ) {
     }
@@ -44,17 +46,17 @@ final class SearchResult
         return $this->name;
     }
 
-    public function getCreatedAt(): \DateTimeInterface
+    public function getCreatedAt(): DateTimeInterface
     {
         return $this->createdAt;
     }
 
-    public function getNotBefore(): \DateTimeInterface
+    public function getNotBefore(): DateTimeInterface
     {
         return $this->notBefore;
     }
 
-    public function getNotAfter(): \DateTimeInterface
+    public function getNotAfter(): DateTimeInterface
     {
         return $this->notAfter;
     }
