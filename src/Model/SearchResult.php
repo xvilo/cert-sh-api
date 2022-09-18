@@ -7,15 +7,15 @@ namespace Xvilo\CrtShApi\Model;
 final class SearchResult
 {
     public function __construct(
-        readonly private int                $id,
-        readonly private int                $issuerCaId,
-        readonly private string             $issuerName,
-        readonly private string             $commonName,
-        readonly private string             $name,
+        readonly private int $id,
+        readonly private int $issuerCaId,
+        readonly private string $issuerName,
+        readonly private string $commonName,
+        readonly private string $name,
         readonly private \DateTimeInterface $createdAt,
         readonly private \DateTimeInterface $notBefore,
         readonly private \DateTimeInterface $notAfter,
-        readonly private string             $serialNumber
+        readonly private string $serialNumber
     ) {
     }
 
